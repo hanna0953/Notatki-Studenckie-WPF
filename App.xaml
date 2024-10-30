@@ -1,0 +1,61 @@
+﻿<Application x:Class="Notatki_Studenckie_v3.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Notatki_Studenckie_v3"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <!--<Style TargetType="Grid">
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="2"/>
+        </Style>-->
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#FFD9D9D9" />
+            <Setter Property="BorderThickness" Value="0"/>
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="15" />
+                </Style>
+            </Style.Resources>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="15" />
+                </Style>
+            </Style.Resources>
+        </Style>
+        <Style TargetType="ListView">
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5" />
+                </Style>
+            </Style.Resources>
+        </Style>
+        <Style TargetType="{x:Type TextBlock}"/>
+        <Style TargetType="{x:Type Window}">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontFamily" Value="Calibri"/>
+        </Style>
+        <Style x:Key="LightMode" TargetType="{x:Type Control}">
+            <Setter Property="Control.Background" Value="White"/>
+            <Setter Property="Control.Foreground" Value="Black"/>
+        </Style>
+
+        <Style x:Key="DarkMode" TargetType="{x:Type Control}">
+            <Setter Property="Control.Background" Value="#FF57759E"/>
+            <Setter Property="Control.Foreground" Value="White"/>
+        </Style>
+
+        <Style x:Key="LightModeTextBox" TargetType="TextBox">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="Black"/>
+        </Style>
+
+        <Style x:Key="DarkModeTextBox" TargetType="TextBox">
+            <Setter Property="Background" Value="#FF9DD1E0"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+    </Application.Resources>
+</Application>
